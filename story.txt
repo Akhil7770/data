@@ -1,0 +1,47 @@
+As a data Engineer,
+I want to investigate why correct standard rates for psychotherapy services (CPT 90837) are not being selected during rate retrieval,
+so that we can identify the root cause and improve accuracy for one of the most frequently searched services in Kyruus.
+
+Background Summary:
+
+Psychotherapy services billed under CPT 90837 are a top-searched procedure in Kyruus. Within the claims dataset, 47% of psychotherapy claims use standard rate contracts. However, 70% of these standard rate claims are retrieving incorrect rates, even though the correct rate is available in the source data. This issue significantly impacts pricing accuracy, with potential implications for member experience and trust in the tool.
+
+Key Investigation Tasks:
+
+Target CPT Code: 90837 (Psychotherapy, 60 minutes)
+
+Contract Type Focus: Standard Rate
+
+Issue: Correct rate exists but is not selected; incorrect rate retrieved
+
+Impact: 70% of standard rate claims for 90837 are affected
+
+Goal: Determine if the issue is due to logic gaps, contract prioritization, POS mismatch, or other factors
+
+Row_Num IDs for Review:
+
+8557558, 6015239, 326015, 3459247, 9106650, 2114404, 9959567, 5746151, 10190575, 9342733,
+7105555, 6443139, 3614010, 10421505, 10636980, 7129361, 4410858, 2313686, 2787442, 3503139,
+2344318, 1794535, 543505, 2469615, 260294, 6275220, 4715410
+
+
+Data file: Filter above IDs in Row_Num column (Column A)
+
+Acceptance Criteria:
+
+Review each claim line to confirm:
+
+Correct rate availability
+
+Rate retrieved by current logic
+
+POS and contract type used
+
+Identify whether standard rate contracts are being deprioritized or skipped
+
+Quantify how often this issue occurs across the dataset
+
+Document findings with examples and root cause analysis
+
+Recommend logic updates or configuration changes to improve rate selection
+
