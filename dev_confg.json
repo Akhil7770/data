@@ -1,0 +1,172 @@
+{
+    "config": {
+        "CODE_BUCKET": "prv-ps-ce-dec-code-hcb-dev",
+        "DATA_BUCKET": "prv-ps-ce-dec-data-hcb-dev",
+        "CE_DATA_BUCKET":"prv-ps-ce-data-hcb-dev",
+        "CE_CODE_BUCKET":"prv-ps-ce-code-hcb-dev",
+        "RESOURCE_SA": "gchcb-prv-ds-ce-ontpd@anbc-dev-prv-cda.iam.gserviceaccount.com",
+        "GCP_ENV": "dev",
+        "REGION": "us-east4",
+        "group_name": "gchcb-provider-de-oftpd",
+        "prod": "prod",
+        "sql_env": "prod",
+        "speciality": "pcp",
+        "specialty": "pcp",
+        "archetype": "pcp",
+        "TENANT": "prv-ps-ce",
+        "mode": 3,
+        "true_spec_ind": "True",
+        "bq_dataset": {
+            "ce_project":"anbc-hcb-dev",
+            "ce_dec_dataset":"prv_ps_ce_dec_hcb_dev",
+	        "ce_dataset":"prv_ps_ce_hcb_dev",
+            "edp_project":"edp-prod-hcbstorage",
+            "edp_dataset_view":"edp_hcb_costtpy_cnsv" ,
+            "edp_core_dataset_view":"edp_hcb_core_cnsv",
+            "edp_dataset":"edp_hcb_costtpy_cns" ,
+            "edp_hcb_core_srcv":"edp_hcb_core_srcv",
+            "provider_ds_hcb_dev":"provider_ds_hcb_dev"
+        },
+        "APP_READ_TABLES": {
+            "ce_provider_table":"CET_PROVIDERS",
+	        "ce_dec_provider_table":"CET_PROVIDERS",
+            "ce_rates_table":"CET_RATES",
+            "ca_rates_table":"CA_RATES_UPDATED",
+            "ca_radiology_codes":"CA_RADIOLOGY_SERVICE_CODES",
+            "ce_scm":"service_code_master",
+            "ce_clmrates_table":"CET_CLAIMS_BASED_CONTRACTOR_RATES",
+            "ce_clmamounts":"CET_CLAIM_BASED_AMOUNTS",
+            "ce_clmrates_detail_table":"CET_CLAIMS_BASED_CONTRACTOR_RATES_DETAIL",
+            "ce_awp_payment_rate":"CET_AWP_PAYMENT_RATES_VIEW",
+            "ce_perbil_payment_rates":"CET_RATE_PCT_PAYMENT_RATES_VIEW",
+            "ce_burgess_payment_rates":"CET_BURGESS_PAYMENT_RATES_VIEW",
+            "ce_dental_payment_rates":"CET_DENTAL_PAYMENT_RATES_VIEW",
+            "cet_address_detail_view": "CET_EPDB_TAX_IDENTIFICATION_NUMBER_ADDRESS_DETAIL_VIEW",
+            "cet_business_group_view": "CET_EPDB_CONTRACT_PROVIDER_BUSINESS_GROUP_VIEW",
+            "cet_specialty": "CET_EPDB_SPECIALTY_VIEW",
+            "cet_scsr_rate_override_view":"CET_SCSR_RATE_OVERRIDE_VIEW",
+            "cet_scsr_rate_detail_view":"CET_SCSR_RATE_DETAIL_VIEW",
+            "cet_scsr_service_detail_view":"CET_SCSR_SERVICE_DETAIL_VIEW",
+            "cet_scsr_service_Affiliation_view":"CET_SCSR_SERVICE_AFFILIATION_VIEW",
+            "cet_scsr_place_of_service_affiliation_view":"CET_SCSR_PLACE_OF_SERVICE_AFFILIATION_VIEW",
+            "cet_scsr_differentiation_criteria_view":"CET_SCSR_DIFFERENTIATION_CRITERIA_VIEW", 
+            "cet_scsr_relative_value_view":"CET_SCSR_RELATIVE_VALUE_VIEW",
+            "cet_scm_fee_service_line_detail_view":"CET_SCM_FEE_SERVICE_LINE_DETAIL_VIEW",
+            "cet_scm_fee_service_detail_view":"CET_SCM_FEE_SERVICE_DETAIL_VIEW",
+            "cet_scm_fee_service_Qualifier_detail_view":"CET_SCM_FEE_SERVICE_QUALIFIER_DETAIL_VIEW",
+            "cet_scm_fee_service_Qualifier_detail_hsq_view": "CET_SCM_FEE_SERVICE_QUALIFIER_DETAIL_HSQ_VIEW",
+            "cet_scm_fee_service_line_detail_hsq_view": "CET_SCM_FEE_SERVICE_LINE_DETAIL_HSQ_VIEW",
+            "cet_scm_fee_service_detail_hsq_view": "CET_SCM_FEE_SERVICE_DETAIL_HSQ_VIEW",
+            "claim_line":"CLAIM_LINE",
+            "procedure":"PROCEDURE",
+            "provider_dm":"PROVIDER_DM",
+            "t_edw_clm_ln_x_drg_type":"T_EDW_CLM_LN_X_DRG_TYPE",
+            "tic_scr_service_detail_view":"TIC_SCSR_SERVICE_DETAIL_VIEW",
+            "tic_scm_fee_service_line_detail_hsq_view":"TIC_SCM_FEE_SERVICE_LINE_DETAIL_HSQ_VIEW",
+            "tic_scm_fee_service_qualifier_detail_hsq_view":"TIC_SCM_FEE_SERVICE_QUALIFIER_DETAIL_HSQ_VIEW",
+            "tic_epdb_contract_provider_business_group_view":"TIC_EPDB_CONTRACT_PROVIDER_BUSINESS_GROUP_VIEW",
+            "tic_epdb_tax_identification_number_address_detail_view":"TIC_EPDB_TAX_IDENTIFICATION_NUMBER_ADDRESS_DETAIL_VIEW",
+            "tic_epdb_national_provider_identifier":"TIC_EPDB_NATIONAL_PROVIDER_IDENTIFIER",
+            "tic_scm_fee_service_line_detail_view":"TIC_SCM_FEE_SERVICE_LINE_DETAIL_VIEW",
+            "tic_scm_fee_service_qualifier_detail_view":"TIC_SCM_FEE_SERVICE_QUALIFIER_DETAIL_VIEW",
+            "tic_scsr_rate_override_view":"TIC_SCSR_RATE_OVERRIDE_VIEW",
+            "tic_scsr_rate_detail_view":"TIC_SCSR_RATE_DETAIL_VIEW",
+            "default_contract_rates_unnest":"default_contract_rates_unnest",
+            "tic_scsr_place_of_service_affiliation":"TIC_SCSR_PLACE_OF_SERVICE_AFFILIATION",
+            "default_contract_rates":"default_contract_rates",
+            "cet_cvs_out_of_network_region_crosswalk":"CET_CVS_OUT_OF_NETWORK_REGION_CROSSWALK",
+            "cet_cvs_out_of_network_allowed_amount":"CET_CVS_OUT_OF_NETWORK_ALLOWED_AMOUNT",
+            "cet_cvs_place_of_service_mapping":"CET_CVS_PLACE_OF_SERVICE_MAPPING",
+            "cet_outofnetwork_allowed_amounts":"CET_OON",
+            "cet_prvflag":"CET_PRVFLAG",
+            "epdb_prvflag":"EPDB_PRVFLAG",
+            "tic_scsr_differentiation_criteria":"TIC_SCSR_DIFFERENTIATION_CRITERIA",
+            "tic_scsr_service_detail":"TIC_SCSR_SERVICE_DETAIL",
+            "scsr_svc_cd_dtl":"SCSR_SVC_CD_DTL",
+            "scm_in_scope":"scm_in_scope",
+            "specialty_mapping_final":"specialty_mapping_final",
+            "cost_awareness_providers":"cost_awareness_providers",
+            "payment_method_hierarchy":"PAYMENT_METHOD_HIERARCHY",
+            "cet_rates1":"CET_RATES1",
+            "cet_rates2":"CET_RATES2",
+            "cet_rates3":"CET_RATES3",
+            "cet_outofnetwork_allowed_amounts1":"CET_OON1",
+            "cet_outofnetwork_allowed_amounts2":"CET_OON2",
+            "cet_outofnetwork_allowed_amounts3":"CET_OON3",
+            "cet_providers1":"CET_PROVIDERS1",
+            "cet_providers2":"CET_PROVIDERS2",
+            "cet_providers3":"CET_PROVIDERS3",
+            "cet_claims_amounts1":"CET_CLAIM_BASED_AMOUNTS1",
+            "cet_claims_amounts2":"CET_CLAIM_BASED_AMOUNTS2",
+            "cet_claims_amounts3":"CET_CLAIM_BASED_AMOUNTS3"
+
+            
+        },
+        "spanner_project_id": "anbc-hcb-dev",
+        "spanner_instance_id": "provider-de",
+		"spanner_database_id": "cost-estimator-secure",
+		"spanner_tables": {
+			"spanner_provider_table": {
+                "bkp_name":"provider_bkp",
+                "stg_name": "provider_stg",
+				"table_name": "CET_PROVIDERS", 
+				"pk": "NATIONAL_PROVIDER_ID"
+			},
+            "spanner_outofnetworkrates_table": {
+                "bkp_name":"out_of_network_rates_bkp",
+                "stg_name": "out_of_network_rates_stg",
+				"table_name": "CET_OON", 
+				"pk": "SERVICE_CD"
+			},
+            "spanner_claims_amounts_table": {
+                "bkp_name":"claims_amounts_bkp",
+                "stg_name": "claims_amounts_stg",
+                "table_name": "CET_CLAIM_BASED_AMOUNTS"
+		    },
+            "spanner_rates_table":{
+                "stg_name": "rates_stg",
+                "table_name": "CET_RATES",
+                "bkp_name":"rates_bkp",
+                "index_name_1":"standard_rate_index",
+                "index_name_2":"non_standard_rate_index"
+            } ,
+            "spanner_prvflag_table": {
+                "bkp_name":"cet_prvflag_bkp",
+                "stg_name": "cet_prvflag_stg",
+				"table_name": "CET_PRVFLAG", 
+				"pk": "PROVIDER_IDENTIFICATION_NBR"
+			}
+        },
+        "labels": {
+            "CREATE_TABLE_LABEL": "OPTIONS (labels=[(\"owner\",\"{OWNER}\"),(\"costcenter\",\"{COSTCENTER}\")])"
+        },
+        "ALTER_TABLE_QUERY": "ALTER TABLE {PROJECT_ID}.{DATABASE}.{TABLE_NAME}_tmp SET OPTIONS (labels=[(\"owner\",\"{OWNER}\"),(\"costcenter\",\"{COSTCENTER}\")]); DROP TABLE IF EXISTS {PROJECT_ID}.{DATABASE}.{TABLE_NAME}; ALTER TABLE {PROJECT_ID}.{DATABASE}.{TABLE_NAME}_tmp RENAME TO {TABLE_NAME};",
+        "COSTCENTER": "790052",
+        "bq_spark_jar": "gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.24.2.jar",
+        "USER": "amanullam",
+        "project_id":"anbc-hcb-dev",
+        "KMS_KEYRING":"gkr-nonprod-us-east4",
+		"VAULT":"cvs-key-vault-nonprod",
+        "subnetwork_uri":"sn-aa-use4-anbc-dev-share",
+        "cache_url": "https://um-e-2-e-reporting-monitoring-api.hcb-dev.aig.aetna.com/clear_cache",
+        "ppk_file_path":"/tmp/temp_private_key.ppk",
+        "s3_hostname": "sftp-internal.aetnadigital.net",
+        "s3_username": "anbc-hcb-non-prod",
+        "s3_bucket_name":"cost-transparency-bundles-npr",
+        "gcs_bucket": {
+            "ce_bucket": "prv-ps-ce-data-hcb-dev"
+        },
+        "gcs_paths": {
+            "ce_claims_amounts_avro_path": "claims_files",
+            "ce_claims_amounts_archive_path": "claims_files/archive",
+            "ce_claims_amounts_staging_path": "claims_files/temp"
+        },
+        "python_config": {
+            "py_requirements": ["pip==22.2.2", "apache-beam[gcp]==2.61.0"],
+            "py_interpreter": "python3.11"
+        },
+        "project_specific": {
+            "owner_name": "schubertc1_aetna_com"
+        }
+    }
+}
