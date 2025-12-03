@@ -1,0 +1,40 @@
+{
+    "membershipId": "5~266526126+10+1+20250101+820223+B+2",
+    "zipCode": "",
+    "benefitProductType": "Medical",
+    "languageCode": "11",
+    "service": {
+        "code": "99214",
+        "type": "CPT4",
+        "supportingService": {
+            "code": "",
+            "type": ""
+        },
+        "modifier": {
+            "modifierCode": ""
+        },
+        "diagnosisCode": "",
+        "placeOfService": {
+            "code": "11"
+        }
+    },
+    "providerInfo": [
+        {
+            "serviceLocation": "7660201",
+            "providerType": "PH",
+            "speciality": {
+                "code": "10319"
+            },
+            "taxIdentificationNumber": "",
+            "taxIdQualifier": "",
+            "providerNetworks": {
+                "networkID": "00391"
+            },
+            "providerIdentificationNumber": "0004312729",
+            "nationalProviderId": "1225058969",
+            "providerNetworkParticipation": {
+                "providerTier": ""
+            }
+        }
+    ]
+}
